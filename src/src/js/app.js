@@ -1,5 +1,5 @@
 import * as globalFunctions from './modules/functions.js';
-// import Vue from 'vue/dist/vue.js';
+import Vue from 'vue/dist/vue.js';
 
 globalFunctions.isWebp();
 import FrontPage from '../blocks/modules/front-page/front-page.js';
