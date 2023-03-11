@@ -1,132 +1,134 @@
-@font-face {
-	font-family: "FuturaPT";
-	font-display: swap;
-	src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"), url("../fonts/FuturaPT-Bold.woff") format("woff"), url("../fonts/FuturaPT-Bold.ttf") format("ttf");
-	font-weight: 700;
-}
-@font-face {
-	font-family: "FuturaPT";
-	font-display: swap;
-	src: url("../fonts/FuturaPT-BoldObl.woff2") format("woff2"), url("../fonts/FuturaPT-BoldObl.woff") format("woff"), url("../fonts/FuturaPT-BoldObl.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "FuturaPT";
-	font-display: swap;
-	src: url("../fonts/FuturaPT-Book.woff2") format("woff2"), url("../fonts/FuturaPT-Book.woff") format("woff"), url("../fonts/FuturaPT-Book.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "FuturaPT";
-	font-display: swap;
-	src: url("../fonts/FuturaPT-BookObl.woff2") format("woff2"), url("../fonts/FuturaPT-BookObl.woff") format("woff"), url("../fonts/FuturaPT-BookObl.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "FuturaPT";
-	font-display: swap;
-	src: url("../fonts/FuturaPT-Demi.woff2") format("woff2"), url("../fonts/FuturaPT-Demi.woff") format("woff"), url("../fonts/FuturaPT-Demi.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "FuturaPT";
-	font-display: swap;
-	src: url("../fonts/FuturaPT-DemiObl.woff2") format("woff2"), url("../fonts/FuturaPT-DemiObl.woff") format("woff"), url("../fonts/FuturaPT-DemiObl.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "FuturaPT";
-	font-display: swap;
-	src: url("../fonts/FuturaPT-ExtraBold.woff2") format("woff2"), url("../fonts/FuturaPT-ExtraBold.woff") format("woff"), url("../fonts/FuturaPT-ExtraBold.ttf") format("ttf");
-	font-weight: 800;
-}
-@font-face {
-	font-family: "FuturaPT";
-	font-display: swap;
-	src: url("../fonts/FuturaPT-Heavy.woff2") format("woff2"), url("../fonts/FuturaPT-Heavy.woff") format("woff"), url("../fonts/FuturaPT-Heavy.ttf") format("ttf");
-	font-weight: 800;
-}
-@font-face {
-	font-family: "FuturaPT";
-	font-display: swap;
-	src: url("../fonts/FuturaPT-ExtraBoldObl.woff2") format("woff2"), url("../fonts/FuturaPT-ExtraBoldObl.woff") format("woff"), url("../fonts/FuturaPT-ExtraBoldObl.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "FuturaPT";
-	font-display: swap;
-	src: url("../fonts/FuturaPT-HeavyObl.woff2") format("woff2"), url("../fonts/FuturaPT-HeavyObl.woff") format("woff"), url("../fonts/FuturaPT-HeavyObl.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "FuturaPT";
-	font-display: swap;
-	src: url("../fonts/FuturaPT-Light.woff2") format("woff2"), url("../fonts/FuturaPT-Light.woff") format("woff"), url("../fonts/FuturaPT-Light.ttf") format("ttf");
-	font-weight: 300;
-}
-@font-face {
-	font-family: "FuturaPT";
-	font-display: swap;
-	src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"), url("../fonts/FuturaPT-Medium.woff") format("woff"), url("../fonts/FuturaPT-Medium.ttf") format("ttf");
-	font-weight: 500;
-}
-@font-face {
-	font-family: "FuturaPT";
-	font-display: swap;
-	src: url("../fonts/FuturaPT-MediumObl.woff2") format("woff2"), url("../fonts/FuturaPT-MediumObl.woff") format("woff"), url("../fonts/FuturaPT-MediumObl.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "FuturaPT";
-	font-display: swap;
-	src: url("../fonts/FuturaPT-LightObl.woff2") format("woff2"), url("../fonts/FuturaPT-LightObl.woff") format("woff"), url("../fonts/FuturaPT-LightObl.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "FuturaPTCond";
-	font-display: swap;
-	src: url("../fonts/FuturaPTCond-Bold.woff2") format("woff2"), url("../fonts/FuturaPTCond-Bold.woff") format("woff"), url("../fonts/FuturaPTCond-Bold.ttf") format("ttf");
-	font-weight: 700;
-}
-@font-face {
-	font-family: "FuturaPTCond";
-	font-display: swap;
-	src: url("../fonts/FuturaPTCond-BoldObl.woff2") format("woff2"), url("../fonts/FuturaPTCond-BoldObl.woff") format("woff"), url("../fonts/FuturaPTCond-BoldObl.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "FuturaPTCond";
-	font-display: swap;
-	src: url("../fonts/FuturaPTCond-Book.woff2") format("woff2"), url("../fonts/FuturaPTCond-Book.woff") format("woff"), url("../fonts/FuturaPTCond-Book.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "FuturaPTCond";
-	font-display: swap;
-	src: url("../fonts/FuturaPTCond-BookObl.woff2") format("woff2"), url("../fonts/FuturaPTCond-BookObl.woff") format("woff"), url("../fonts/FuturaPTCond-BookObl.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "FuturaPTCond";
-	font-display: swap;
-	src: url("../fonts/FuturaPTCond-ExtraBold.woff2") format("woff2"), url("../fonts/FuturaPTCond-ExtraBold.woff") format("woff"), url("../fonts/FuturaPTCond-ExtraBold.ttf") format("ttf");
-	font-weight: 800;
-}
-@font-face {
-	font-family: "FuturaPTCond";
-	font-display: swap;
-	src: url("../fonts/FuturaPTCond-Medium.woff2") format("woff2"), url("../fonts/FuturaPTCond-Medium.woff") format("woff"), url("../fonts/FuturaPTCond-Medium.ttf") format("ttf");
-	font-weight: 500;
-}
-@font-face {
-	font-family: "FuturaPTCond";
-	font-display: swap;
-	src: url("../fonts/FuturaPTCond-ExtraBoldObl.woff2") format("woff2"), url("../fonts/FuturaPTCond-ExtraBoldObl.woff") format("woff"), url("../fonts/FuturaPTCond-ExtraBoldObl.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "FuturaPTCond";
-	font-display: swap;
-	src: url("../fonts/FuturaPTCond-MediumObl.woff2") format("woff2"), url("../fonts/FuturaPTCond-MediumObl.woff") format("woff"), url("../fonts/FuturaPTCond-MediumObl.ttf") format("ttf");
-	font-weight: 400;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// @font-face {
+// 	font-family: "FuturaPT";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"), url("../fonts/FuturaPT-Bold.woff") format("woff"), url("../fonts/FuturaPT-Bold.ttf") format("ttf");
+// 	font-weight: 700;
+// }
+// @font-face {
+// 	font-family: "FuturaPT";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPT-BoldObl.woff2") format("woff2"), url("../fonts/FuturaPT-BoldObl.woff") format("woff"), url("../fonts/FuturaPT-BoldObl.ttf") format("ttf");
+// 	font-weight: 400;
+// }
+// @font-face {
+// 	font-family: "FuturaPT";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPT-Book.woff2") format("woff2"), url("../fonts/FuturaPT-Book.woff") format("woff"), url("../fonts/FuturaPT-Book.ttf") format("ttf");
+// 	font-weight: 400;
+// }
+// @font-face {
+// 	font-family: "FuturaPT";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPT-BookObl.woff2") format("woff2"), url("../fonts/FuturaPT-BookObl.woff") format("woff"), url("../fonts/FuturaPT-BookObl.ttf") format("ttf");
+// 	font-weight: 400;
+// }
+// @font-face {
+// 	font-family: "FuturaPT";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPT-Demi.woff2") format("woff2"), url("../fonts/FuturaPT-Demi.woff") format("woff"), url("../fonts/FuturaPT-Demi.ttf") format("ttf");
+// 	font-weight: 400;
+// }
+// @font-face {
+// 	font-family: "FuturaPT";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPT-DemiObl.woff2") format("woff2"), url("../fonts/FuturaPT-DemiObl.woff") format("woff"), url("../fonts/FuturaPT-DemiObl.ttf") format("ttf");
+// 	font-weight: 400;
+// }
+// @font-face {
+// 	font-family: "FuturaPT";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPT-ExtraBold.woff2") format("woff2"), url("../fonts/FuturaPT-ExtraBold.woff") format("woff"), url("../fonts/FuturaPT-ExtraBold.ttf") format("ttf");
+// 	font-weight: 800;
+// }
+// @font-face {
+// 	font-family: "FuturaPT";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPT-Heavy.woff2") format("woff2"), url("../fonts/FuturaPT-Heavy.woff") format("woff"), url("../fonts/FuturaPT-Heavy.ttf") format("ttf");
+// 	font-weight: 800;
+// }
+// @font-face {
+// 	font-family: "FuturaPT";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPT-ExtraBoldObl.woff2") format("woff2"), url("../fonts/FuturaPT-ExtraBoldObl.woff") format("woff"), url("../fonts/FuturaPT-ExtraBoldObl.ttf") format("ttf");
+// 	font-weight: 400;
+// }
+// @font-face {
+// 	font-family: "FuturaPT";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPT-HeavyObl.woff2") format("woff2"), url("../fonts/FuturaPT-HeavyObl.woff") format("woff"), url("../fonts/FuturaPT-HeavyObl.ttf") format("ttf");
+// 	font-weight: 400;
+// }
+// @font-face {
+// 	font-family: "FuturaPT";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPT-Light.woff2") format("woff2"), url("../fonts/FuturaPT-Light.woff") format("woff"), url("../fonts/FuturaPT-Light.ttf") format("ttf");
+// 	font-weight: 300;
+// }
+// @font-face {
+// 	font-family: "FuturaPT";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"), url("../fonts/FuturaPT-Medium.woff") format("woff"), url("../fonts/FuturaPT-Medium.ttf") format("ttf");
+// 	font-weight: 500;
+// }
+// @font-face {
+// 	font-family: "FuturaPT";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPT-MediumObl.woff2") format("woff2"), url("../fonts/FuturaPT-MediumObl.woff") format("woff"), url("../fonts/FuturaPT-MediumObl.ttf") format("ttf");
+// 	font-weight: 400;
+// }
+// @font-face {
+// 	font-family: "FuturaPT";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPT-LightObl.woff2") format("woff2"), url("../fonts/FuturaPT-LightObl.woff") format("woff"), url("../fonts/FuturaPT-LightObl.ttf") format("ttf");
+// 	font-weight: 400;
+// }
+// @font-face {
+// 	font-family: "FuturaPTCond";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPTCond-Bold.woff2") format("woff2"), url("../fonts/FuturaPTCond-Bold.woff") format("woff"), url("../fonts/FuturaPTCond-Bold.ttf") format("ttf");
+// 	font-weight: 700;
+// }
+// @font-face {
+// 	font-family: "FuturaPTCond";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPTCond-BoldObl.woff2") format("woff2"), url("../fonts/FuturaPTCond-BoldObl.woff") format("woff"), url("../fonts/FuturaPTCond-BoldObl.ttf") format("ttf");
+// 	font-weight: 400;
+// }
+// @font-face {
+// 	font-family: "FuturaPTCond";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPTCond-Book.woff2") format("woff2"), url("../fonts/FuturaPTCond-Book.woff") format("woff"), url("../fonts/FuturaPTCond-Book.ttf") format("ttf");
+// 	font-weight: 400;
+// }
+// @font-face {
+// 	font-family: "FuturaPTCond";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPTCond-BookObl.woff2") format("woff2"), url("../fonts/FuturaPTCond-BookObl.woff") format("woff"), url("../fonts/FuturaPTCond-BookObl.ttf") format("ttf");
+// 	font-weight: 400;
+// }
+// @font-face {
+// 	font-family: "FuturaPTCond";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPTCond-ExtraBold.woff2") format("woff2"), url("../fonts/FuturaPTCond-ExtraBold.woff") format("woff"), url("../fonts/FuturaPTCond-ExtraBold.ttf") format("ttf");
+// 	font-weight: 800;
+// }
+// @font-face {
+// 	font-family: "FuturaPTCond";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPTCond-Medium.woff2") format("woff2"), url("../fonts/FuturaPTCond-Medium.woff") format("woff"), url("../fonts/FuturaPTCond-Medium.ttf") format("ttf");
+// 	font-weight: 500;
+// }
+// @font-face {
+// 	font-family: "FuturaPTCond";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPTCond-ExtraBoldObl.woff2") format("woff2"), url("../fonts/FuturaPTCond-ExtraBoldObl.woff") format("woff"), url("../fonts/FuturaPTCond-ExtraBoldObl.ttf") format("ttf");
+// 	font-weight: 400;
+// }
+// @font-face {
+// 	font-family: "FuturaPTCond";
+// 	font-display: swap;
+// 	src: url("../fonts/FuturaPTCond-MediumObl.woff2") format("woff2"), url("../fonts/FuturaPTCond-MediumObl.woff") format("woff"), url("../fonts/FuturaPTCond-MediumObl.ttf") format("ttf");
+// 	font-weight: 400;
+// }
