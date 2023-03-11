@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper" id="app" :class="{isMobile, isTablet}">
+        <div class="decor decor__first">
+            <img src="img/decor.svg" width="100%" alt="">
+        </div>
+        @@include('blocks/modules/header/header.html', {})
+        @@include('blocks/modules/organizations/organizations.html', {})
+        @@include('blocks/modules/why-us/why-us.html', {})
+        @@include('blocks/modules/places-and-cases/places-and-cases.html', {})
+        @@include('blocks/modules/services/services.html', {})
+        @@include('blocks/modules/company/company.html', {})
+        
+        @@include('blocks/modules/faq/faq.html', {})
+        @@include('blocks/modules/contacts/contacts.html', {})
+        @@include('blocks/modules/footer/footer.html', {})
+        @@include('blocks/modules/modal/modal.html', {})
+        @@include('blocks/modules/menu/menu.html', {})
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

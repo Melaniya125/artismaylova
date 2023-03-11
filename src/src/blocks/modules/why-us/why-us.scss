@@ -1,0 +1,83 @@
+
+.why-us-block {
+    padding-top: 131px;
+    margin-bottom: 39px;
+    @media all and (max-width: 1320px) {
+        padding-top: 80px;
+        margin-bottom: 0;
+    }
+}
+.why-us__in {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    @media all and (max-width: 1320px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+    }
+    @media all and (max-width: 720px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.why-us__item {
+    text-align: center;
+    padding: 20px 40px 20px;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: inset 15.2px -15.2px 15.2px rgba(165, 165, 165, 0.028), inset -15.2px 15.2px 15.2px rgba(255, 255, 255, 0.028);
+    @media all and (min-width: 1321px) {
+        &:nth-child(5n+1) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        } 
+        &:nth-child(5n+2) {
+            grid-column-start: 3;
+            grid-column-end: 5;
+        } 
+        &:nth-child(5n+3) {
+            grid-column-start: 5;
+            grid-column-end: 7;
+        } 
+        &:nth-child(5n+4) {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        } 
+        &:nth-child(5n+5) {
+            grid-column-start: 4;
+            grid-column-end: 7;
+        } 
+    }
+}
+.why-us__item h2 {
+    font-size: 20px;
+    color: #E7BA7A;
+    line-height: 150%;
+    margin-bottom: 11px;
+    max-width: 380px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+.why-us__item p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 150%;
+    margin: 0;
+    font-weight: 500;
+}
+.why-us-block .title {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 48px;
+    @media all and (max-width: 1320px) {
+        margin-top: 0;
+        font-size: 36px;
+        line-height: 54px;
+        margin-bottom: 30px;
+    }
+}
+.why-us__item img {
+    margin-bottom: 22px;
+}

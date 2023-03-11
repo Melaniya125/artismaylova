@@ -1,0 +1,88 @@
+<div class="places-and-cases-block">
+    <div class="places-and-cases-block__container">
+        
+        <div class="places-and-cases-block__background rotateOnMouseMove" data-animatespeed="1400"></div>
+        <div class="places-and-cases-block__in container">
+            <div class="places-and-cases-block__top places-block__top">
+                <h2 class="title wow fadeInDown" data-wow-delay="0s">Наши площадки</h2>
+                <div class="global__arrows places-block__top-arrows">
+                    <div class="global__arrow global__arrow--prev"></div>
+                    <div class="global__arrow global__arrow--next"></div>
+                </div>
+            </div>
+            <div class="places-block owl-carousel">
+                @@for (i = 0; i < 4; i++) {
+                    <div class="places-block-item wow zoomIn" data-wow-delay="0s" style="--background: url('../img/5.png');">
+                        <div class="places-logo">
+                            <img src="img/amstel.png" alt="logo">
+                        </div>
+                        <div class="places-test">
+                            <h2>Бар-ресторан Амстел</h2>
+                            <p>Господа, разбавленное изрядной долей эмпатии, рациональное мышление однозначно определяет каждого участника </p>
+                        </div>
+                    </div>
+                }              
+            </div>
+            <div class="places-and-cases-block__top cases-block__top">
+                <h2 class="title wow fadeInDown" data-wow-delay="0s">Наши кейсы</h2>
+                <div class="global__arrows cases-block__top-arrows wow fadeInDown" data-wow-delay="0.3s">
+                    <div class="global__arrow global__arrow--prev"></div>
+                    <div class="global__arrow global__arrow--next"></div>
+                </div>
+            </div>
+            <div class="cases-block owl-carousel">
+                        @@for (i = 0; i < 4; i++) {
+                            <div class="cases-block-item wow zoomIn" data-wow-delay="0s">
+                                <div class="cases-block-item-slider owl-carousel">
+                                    @@for (i = 0; i < 4; i++) {
+                                        <img src="img/slider.png" width="100%" alt="image">
+                                    }
+                                </div>
+                                <div class="title-block-slider">
+                                    <h2>Корпоративный день рождения в Бар-ресторе “Амстел”</h2>
+                                    <a href="" class="video">
+                                        <span>Смотреть видео: 2 мин. 36 сек</span>
+                                        <img src="img/blue-youtube.svg" alt="icon">
+                                    </a>
+                                </div>
+                                <p>Господа, разбавленное изрядной долей эмпатии, рациональное мышление однозначно определяет каждого участника </p>
+                                <div class="slider-icons">
+                                    <div class="slider-icons-item">
+                                        <img src="img/time.svg" alt="icon">
+                                        <span>8 часов работы</span>
+                                    </div>
+                                    <div class="slider-icons-item">
+                                        <img src="img/time.svg" alt="icon">
+                                        <span>8 часов работы</span>
+                                    </div>
+                                    <div class="slider-icons-item">
+                                        <img src="img/time.svg" alt="icon">
+                                        <span>8 часов работы</span>
+                                    </div>
+                                    <div class="slider-icons-item">
+                                        <img src="img/time.svg" alt="icon">
+                                        <span>8 часов работы</span>
+                                    </div>
+                                    <div class="slider-icons-item">
+                                        <img src="img/time.svg" alt="icon">
+                                        <span>8 часов работы</span>
+                                    </div>
+                                    <div class="slider-icons-item">
+                                        <img src="img/time.svg" alt="icon">
+                                        <span>8 часов работы</span>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+            </div>
+
+            <div class="form-block-first wow zoomIn" data-wow-delay="0s">
+                <div class="form-block-first__background rotateOnMouseMove" data-animatespeed="300"></div>
+                <h2>Хотите так же?</h2>
+                <div class="form">
+                    <form action=""></form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
