@@ -454,10 +454,12 @@ template {
   bottom: 0px;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
 }
 
 .front-page__right-socials a:not(:last-child) {
-  margin-right: 33px;
+  margin-right: 5%;
 }
 
 .front-page-main-menu {
@@ -550,7 +552,7 @@ template {
 }
 
 .front-page-bottom-menu__list li:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 5%;
 }
 
 .glide {

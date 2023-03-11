@@ -55,9 +55,11 @@
             bottom: 0px;
             left: 50%;
             transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
         }
         &-socials a:not(:last-child) {
-            margin-right: 33px;
+            margin-right: 5%;
         }
     }
 }
@@ -150,7 +152,7 @@
     &__list li {
         // width: 20%;
         &:not(:last-child) {
-            margin-right: 50px;
+            margin-right: 5%;
         }
     }
 }
