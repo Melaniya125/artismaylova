@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package mirage-event
+ * @package Soluzioni_di_casa
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package mirage-event
+ * @package Soluzioni_di_casa
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function mirage_event_jetpack_setup() {
+function soluzioni_di_casa_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'mirage_event_infinite_scroll_render',
+			'render'    => 'soluzioni_di_casa_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function mirage_event_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'mirage-event-style',
+				'stylesheet' => 'soluzioni-di-casa-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,13 +48,13 @@ function mirage_event_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'mirage_event_jetpack_setup' );
+add_action( 'after_setup_theme', 'soluzioni_di_casa_jetpack_setup' );
 
-if ( ! function_exists( 'mirage_event_infinite_scroll_render' ) ) :
+if ( ! function_exists( 'soluzioni_di_casa_infinite_scroll_render' ) ) :
 	/**
 	 * Custom render function for Infinite Scroll.
 	 */
-	function mirage_event_infinite_scroll_render() {
+	function soluzioni_di_casa_infinite_scroll_render() {
 		while ( have_posts() ) {
 			the_post();
 			if ( is_search() ) :

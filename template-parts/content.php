@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package mirage-event
+ * @package Soluzioni_di_casa
  */
 
 ?>
@@ -22,14 +22,14 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				mirage_event_posted_on();
-				mirage_event_posted_by();
+				soluzioni_di_casa_posted_on();
+				soluzioni_di_casa_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php mirage_event_post_thumbnail(); ?>
+	<?php soluzioni_di_casa_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -37,7 +37,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'mirage-event' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'soluzioni-di-casa' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -50,7 +50,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'mirage-event' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'soluzioni-di-casa' ),
 				'after'  => '</div>',
 			)
 		);
@@ -58,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php mirage_event_entry_footer(); ?>
+		<?php soluzioni_di_casa_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

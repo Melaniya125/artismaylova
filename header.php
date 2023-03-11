@@ -6,13 +6,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package mirage-event
+ * @package Soluzioni_di_casa
  */
 
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
-
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,40 +21,39 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<?php wp_body_open(); ?>
+<?php wp_body_open(); ?>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'soluzioni-di-casa' ); ?></a>
 
-	<div class="wrapper" id="app" :class="{isMobile, isTablet}">
-		<div class="decor decor__first">
-			<img src="<?= get_template_directory_uri();?>/src/dist/img/decor.svg" width="100%" alt="">
-		</div>
-		<header class="wow fadeInDown" data-wow-delay="0.1s">
-			<div class="container">
-				<div class="header">
-					<div class="header__in">
-						<a href="/" class="header__logo">
-							<img src="<?= get_template_directory_uri();?>/src/dist/img/logo.svg" width="100%" alt="logo">
-						</a>
-						<a href="/" class="header__logo--mobile">
-							<img src="<?= get_template_directory_uri();?>/src/dist/img/logo_mobile.svg" alt="logo">
-						</a>
-						<div class="header__middle">
-							<nav class="header__menu">
-								<ul>
-									<li><a href="#">Площадки</a></li>
-									<li><a href="#">Кейсы</a></li>
-									<li><a href="#">Услуги</a></li>
-									<li><a href="#">Отзывы</a></li>
-									<li><a href="#">Контакты</a></li>
-								</ul>
-							</nav>
-							<div class="header-number"><a href="tel:+79999999999">+9 (999) 999-99-99</a></div>
-							<div class="header__menu-opener menuOpener">
-								<img src="<?= get_template_directory_uri();?>/src/dist/img/burger_closed.svg" alt="">
-								<img src="<?= get_template_directory_uri();?>/src/dist/img/burger_opened.svg" alt="">
-							</div>
-						</div>
-						<button type="submit" class="modalOpener">Отправить заявку</button>
-					</div>
-				</div>
-			</div>
-		</header>
+	<header id="masthead" class="site-header">
+		<div class="site-branding">
+			<?php
+			the_custom_logo();
+			if ( is_front_page() && is_home() ) :
+				?>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<?php
+			else :
+				?>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<?php
+			endif;
+			$soluzioni_di_casa_description = get_bloginfo( 'description', 'display' );
+			if ( $soluzioni_di_casa_description || is_customize_preview() ) :
+				?>
+				<p class="site-description"><?php echo $soluzioni_di_casa_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+			<?php endif; ?>
+		</div><!-- .site-branding -->
+
+		<nav id="site-navigation" class="main-navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'soluzioni-di-casa' ); ?></button>
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				)
+			);
+			?>
+		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->

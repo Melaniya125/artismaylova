@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package mirage-event
+ * @package Soluzioni_di_casa
  */
 
 get_header();
