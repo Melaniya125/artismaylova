@@ -430,12 +430,10 @@ template {
   box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, 0.2);
 }
 
-.front-page-main-menu__list {
-  color: red;
-}
-
 .front-page-main-menu__list li a {
-  font-family: "Noto Sans Display";
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-style: italic;
   color: red;
 }
 
