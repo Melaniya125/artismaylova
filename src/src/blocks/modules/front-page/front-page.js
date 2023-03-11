@@ -9,7 +9,7 @@ const FrontPage = class FrontPage {
         if (!document.querySelector('.front-page-main-menu__slider.glide')) return;
 
         this.slider = new Glide('.front-page-main-menu__slider.glide', {
-            perView: 2,
+            perView: 1,
             gap: 20,
             swipeThreshold: false,
             dragThreshold: false,
