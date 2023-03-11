@@ -389,7 +389,7 @@ template {
 }
 
 .no-webp .front-page__left {
-  background: url("/img/background.jpg") 0 0/cover no-repeat; }
+  background: url("../img/background.jpg") 0 0/cover no-repeat; }
 
 .front-page__left {
   width: 71%;
@@ -575,4 +575,4 @@ template {
   direction: rtl;
 }
 
-.webp .front-page__left { background: url(/img/background.webp) 0 0/cover no-repeat; }
+.webp .front-page__left { background: url(../img/background.webp) 0 0/cover no-repeat; }
