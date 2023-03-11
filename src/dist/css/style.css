@@ -382,6 +382,7 @@ template {
 * {
   scroll-behavior: smooth;
   color: #1a1210;
+  font-family: "Noto Sans Display", sans-serif;
 }
 
 .front-page__in {
@@ -392,7 +393,7 @@ template {
   background: url("../img/background.jpg") 0 0/cover no-repeat; }
 
 .front-page__left {
-  width: 71%;
+  width: 66%;
   height: 100%;
   padding: 85px 50px 50px 50px;
 }
@@ -407,17 +408,70 @@ template {
   margin-bottom: 65px;
 }
 
+.no-webp .front-page__right {
+  background: url("../img/photo.jpg") 0 0/cover no-repeat; }
+
 .front-page__right {
   width: 29%;
+  position: relative;
+}
+
+.front-page__right-link {
+  font-size: 38px;
+  color: #fff;
+  text-align: center;
+  margin-top: 95px;
+  display: block;
+  text-decoration: none;
+}
+
+.front-page__right-lang {
+  font-size: 24px;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 77px;
+}
+
+.front-page__right-lang a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.front-page__right-text {
+  color: #fff;
+  font-size: 107px;
+  line-height: 129px;
+  position: absolute;
+  bottom: 29%;
+  left: -51px;
+  font-family: "Gloock", serif;
+  transform: rotate(270deg);
+}
+
+.front-page__right-socials {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.front-page__right-socials a:not(:last-child) {
+  margin-right: 33px;
 }
 
 .front-page-main-menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 0 0 130px;
 }
 
 .front-page-main-menu__left {
-  width: 57%;
+  width: 43%;
+}
+
+.front-page-main-menu__right {
+  width: 35%;
 }
 
 .front-page-main-menu__slider {
@@ -429,7 +483,6 @@ template {
   border: 8px solid rgba(255, 255, 255, 0.5);
   box-sizing: border-box;
   box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, 0.2);
-  max-width: 486px;
   width: 100%;
   min-height: 493px;
   height: 100%;
@@ -576,3 +629,5 @@ template {
 }
 
 .webp .front-page__left { background: url(../img/background.webp) 0 0/cover no-repeat; }
+
+.webp .front-page__right { background: url(../img/photo.webp) 0 0/cover no-repeat; }
