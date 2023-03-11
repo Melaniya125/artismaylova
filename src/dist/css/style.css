@@ -564,6 +564,24 @@ template {
   width: 29%;
 }
 
+.front-page-main-menu {
+  display: flex;
+  align-items: center;
+}
+
+.front-page-main-menu__slider {
+  width: 50%;
+}
+
+.front-page-main-menu__item {
+  max-width: 480px;
+}
+
+.front-page-main-menu__item img {
+  border-radius: 100px;
+  border: 1px solid #fff;
+}
+
 .glide {
   position: relative;
   width: 100%;
