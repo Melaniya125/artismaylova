@@ -3,26 +3,31 @@
         <div class="front-page__left">
             <h2>ДИАНА ИСМАЙЛОВА</h2>
             <div class="front-page-main-menu">
-                <div class="front-page-main-menu__slider glide">
-                    <div class="glide__track" data-glide-el="track">
-                        <div class="glide__slides">
-                            @@for ($i = 0; $i < 1; $i++) {
-                            <div class="front-page-main-menu__item glide__slide">
-                                <img src="img/art.jpg" alt="">
+                <div class="front-page-main-menu__left">
+
+                    <div class="front-page-main-menu__slider glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <div class="glide__slides">
+                                @@for ($i = 0; $i < 1; $i++) { 
+                                    <div class="front-page-main-menu__item glide__slide">
+                                    <img src="img/art.jpg" alt="">
+                                </div>
+
+                            }
+
                             </div>
-                            
-                        }
-                            
                         </div>
+
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                        </div>
+
+
                     </div>
-
-                    <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-                      </div>
-
-
                 </div>
+
+
                 <div class="front-page-main-menu__right">
                     <ul class="front-page-main-menu__list">
                         <li><a href="#">Главная</a></li>
@@ -31,11 +36,23 @@
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </div>
-            </div>
-           
         </div>
-        <div class="front-page__right">
 
+        <div class="front-page-bottom-menu">
+            <div class="front-page-bottom-menu__in">
+                <ul class="front-page-bottom-menu__list">
+                    <li><a href="#">Масляная живопись</a></li>
+                    <li><a href="#">Миниатюры</a></li>
+                    <li><a href="#">Графика</a></li>
+                    <li><a href="#">Роспись стен, предметов</a></li>
+                    <li><a href="#">Обучение, мастер-классы</a></li>
+                </ul>
+            </div>
         </div>
+
     </div>
+    <div class="front-page__right">
+
+    </div>
+</div>
 </div>
