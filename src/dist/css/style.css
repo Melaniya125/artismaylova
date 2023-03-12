@@ -395,7 +395,7 @@ template {
 .front-page__left {
   width: 66%;
   height: 100%;
-  padding: 85px 50px 50px 50px;
+  padding: 50px 50px 50px 50px;
 }
 
 .front-page__left h2 {
@@ -405,7 +405,7 @@ template {
   font-weight: bold;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 65px;
+  margin-bottom: 50px;
 }
 
 .no-webp .front-page__right {
@@ -420,7 +420,7 @@ template {
   font-size: 38px;
   color: #fff;
   text-align: center;
-  margin-top: 95px;
+  margin-top: 78px;
   display: block;
   text-decoration: none;
 }
@@ -451,7 +451,7 @@ template {
 
 .front-page__right-socials {
   position: absolute;
-  bottom: 0px;
+  bottom: 42px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -529,7 +529,7 @@ template {
 .front-page-bottom-menu__list {
   list-style: none;
   padding: 0;
-  margin-top: 130px;
+  margin-top: 80px;
   margin-bottom: 0;
   display: flex;
   align-items: center;
