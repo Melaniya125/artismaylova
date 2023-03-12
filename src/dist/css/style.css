@@ -513,7 +513,7 @@ template {
   border-radius: 100px;
   border: 8px solid rgba(255, 255, 255, 0.5);
   box-sizing: border-box;
-  box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 9px 9px 16px 10px rgba(0, 0, 0, 0.4);
   width: 100%;
   min-height: 493px;
   height: 100%;
@@ -544,7 +544,7 @@ template {
   background: rgba(255, 255, 255, 0.8);
   text-align: center;
   box-sizing: border-box;
-  box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 10px 12px 5px rgba(0, 0, 0, 0.4);
 }
 
 .front-page-main-menu__list li:not(:last-child) {
@@ -567,7 +567,7 @@ template {
   background: rgba(255, 255, 255, 0.8);
   text-align: center;
   box-sizing: border-box;
-  box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 10px 12px 5px rgba(0, 0, 0, 0.4);
 }
 
 .front-page-bottom-menu__list li a {
