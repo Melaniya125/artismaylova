@@ -3,7 +3,7 @@
         display: flex;
     }
     &__left {
-        background: url("../img/background.jpg") 0 -85px/cover no-repeat;
+        background: url("../img/background2.jpg") 0 -85px/cover no-repeat;
         width: 66%;
         height: 100%;
         padding: 50px 50px 50px 50px;
@@ -79,6 +79,33 @@
     &__slider {
         width: 50%;
     }
+    &__arrows .glide__arrow{
+        position: absolute;
+        top: 41%;
+        left: -100px;
+        font-size: 0;
+        width: 60px;
+        height: 64px;
+        background: url("../img/arrow.png") 40% 50% no-repeat, rgba(255, 255, 255, 0.8);
+        background-clip: content-box, padding-box !important;
+        // background: no-repeat padding-box/40% 50% url("../img/arrow.png"), rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        border: 8px solid rgba(255, 255, 255, 0.5);
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-box-shadow: 8px 8px 7px 4px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 8px 8px 7px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 8px 8px 7px 4px rgba(0, 0, 0, 0.2);
+        
+    }
+    &__arrows .glide__arrow--right {
+        left: auto;
+        right: -76px;
+        transform: rotate(180deg);
+        -webkit-box-shadow: -8px -8px 7px 4px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: -8px -8px 7px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: -8px -8px 7px 4px rgba(0, 0, 0, 0.2);
+    }
     &__item {
         img {
             border-radius: 100px;
@@ -130,11 +157,11 @@
     &__list {
         list-style: none;
         padding: 0;
-        margin-top: 80px;
+        margin-top: 110px;
         margin-bottom: 0;
         display: flex;
         align-items: center;
-        padding: 35px 18px;
+        padding: 18px;
         border-radius: 27px;
         background: rgba(255, 255, 255, 0.8);
         text-align: center;
