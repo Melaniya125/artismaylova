@@ -390,7 +390,7 @@ template {
 }
 
 .no-webp .front-page__left {
-  background: url("../img/background.jpg") 0 0/cover no-repeat; }
+  background: url("../img/background.jpg") 0 -85px/cover no-repeat; }
 
 .front-page__left {
   width: 66%;
@@ -468,8 +468,12 @@ template {
   padding: 0 0 0 130px;
 }
 
+.front-page-main-menu__item {
+  padding: 0 28px 28px 0;
+}
+
 .front-page-main-menu__left {
-  width: 43%;
+  width: 45%;
 }
 
 .front-page-main-menu__right {
@@ -630,6 +634,6 @@ template {
   direction: rtl;
 }
 
-.webp .front-page__left { background: url(../img/background.webp) 0 0/cover no-repeat; }
+.webp .front-page__left { background: url(../img/background.webp) 0 -85px/cover no-repeat; }
 
 .webp .front-page__right { background: url(../img/photo.webp) 0 0/cover no-repeat; }

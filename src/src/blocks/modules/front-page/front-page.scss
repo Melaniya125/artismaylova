@@ -3,7 +3,7 @@
         display: flex;
     }
     &__left {
-        background: url("../img/background.jpg") 0 0/cover no-repeat;
+        background: url("../img/background.jpg") 0 -85px/cover no-repeat;
         width: 66%;
         height: 100%;
         padding: 50px 50px 50px 50px;
@@ -67,8 +67,11 @@
     display: flex;
     justify-content: space-between;
     padding: 0 0 0 130px;
+    &__item {
+        padding: 0 28px 28px 0;
+    }
     &__left {
-        width: 43%;
+        width: 45%;
     }
     &__right {
         width: 35%;
