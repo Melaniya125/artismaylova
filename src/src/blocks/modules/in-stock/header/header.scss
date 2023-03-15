@@ -1,0 +1,52 @@
+.header {
+    padding: 76px 0 60px 0;
+    &__in h2 {
+        font-family: 'Cormorant Infant';
+        font-size: 90px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 55px;
+    }
+    &__menu-list-items {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        justify-content: center;
+        margin: 0;
+    }
+    &__menu-item:not(:last-child) {
+        margin-right: 58px;
+    }
+    &__menu-item a {
+        text-decoration: none;
+        font-family: 'Noto Sans Display', sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+    }
+    &__menu-item {
+        position: relative;
+    }
+    &__menu-item:before {
+        content: "";
+        position: absolute;
+        display: block;
+        opacity: 0;
+        top: 54px;
+        left: 0;
+        height: 5px;
+        width: 1px;
+        background-color: #7d7d7d;
+        -webkit-transition: all .3s ease-in-out;
+        -moz--transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        transform: translateX(0);
+    }
+    &__menu-item:hover:before {
+        opacity: 1;
+        width: 100%;
+    }
+}
+

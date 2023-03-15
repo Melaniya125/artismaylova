@@ -1,0 +1,27 @@
+.gallery {
+    padding-bottom: 154px;
+    @media all and (max-width:1560px) {
+        padding: 0 40px;
+        padding-bottom: 80px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 53px 100px;
+    }
+    &__item {
+        text-decoration: none;
+    }
+    &__item span {
+        display: block;
+        text-align: center;
+        font-family: 'Noto Sans Display', sans-serif;
+        font-size: 38px;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+    &__image img {
+        width: 100%;
+        object-fit: cover;
+    }
+}

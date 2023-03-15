@@ -52,7 +52,7 @@
         }
         &-socials {
             position: absolute;
-            bottom: 42px;
+            bottom: 30px;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 100%;
@@ -60,6 +60,9 @@
         }
         &-socials a:not(:last-child) {
             margin-right: 5%;
+        }
+        &-socials a img {
+            max-width: 54px;
         }
     }
 }

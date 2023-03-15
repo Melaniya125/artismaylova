@@ -385,6 +385,16 @@ template {
   font-family: "Noto Sans Display", sans-serif;
 }
 
+body {
+  background: #fffcf7;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .front-page__in {
   display: flex;
 }
@@ -451,7 +461,7 @@ template {
 
 .front-page__right-socials {
   position: absolute;
-  bottom: 42px;
+  bottom: 30px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -460,6 +470,10 @@ template {
 
 .front-page__right-socials a:not(:last-child) {
   margin-right: 5%;
+}
+
+.front-page__right-socials a img {
+  max-width: 54px;
 }
 
 .front-page-main-menu {
@@ -657,6 +671,99 @@ template {
 
 .glide--rtl {
   direction: rtl;
+}
+
+.header {
+  padding: 76px 0 60px 0;
+}
+
+.header__in h2 {
+  font-family: "Cormorant Infant";
+  font-size: 90px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.header__menu-list-items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+}
+
+.header__menu-item:not(:last-child) {
+  margin-right: 58px;
+}
+
+.header__menu-item a {
+  text-decoration: none;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.header__menu-item {
+  position: relative;
+}
+
+.header__menu-item:before {
+  content: "";
+  position: absolute;
+  display: block;
+  opacity: 0;
+  top: 54px;
+  left: 0;
+  height: 5px;
+  width: 1px;
+  background-color: #7d7d7d;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz--transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(0);
+}
+
+.header__menu-item:hover:before {
+  opacity: 1;
+  width: 100%;
+}
+
+.gallery {
+  padding-bottom: 154px;
+}
+
+.gallery__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 53px 100px;
+}
+
+.gallery__item {
+  text-decoration: none;
+}
+
+.gallery__item span {
+  display: block;
+  text-align: center;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.gallery__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media all and (max-width: 1560px) {
+  .gallery {
+    padding: 0 40px;
+    padding-bottom: 80px;
+  }
 }
 
 .webp .front-page__left { background: url(../img/background2.webp) 0 -85px/cover no-repeat; }
