@@ -771,6 +771,106 @@ body {
      object-fit: cover;
 }
 
+.detail__info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.detail__slider {
+  width: 31.5%;
+}
+
+.detail__about {
+  width: 28%;
+  padding-left: 5%;
+}
+
+.detail__about h2 {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 17px;
+}
+
+.detail__price {
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #a7987e;
+}
+
+.detail__specifications {
+  margin-top: 34px;
+  padding: 17px 0;
+  margin-bottom: 42px;
+}
+
+.detail__button {
+  text-transform: uppercase;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 25px 0;
+  max-width: 308px;
+  text-align: center;
+  background: #f6efe3;
+  cursor: pointer;
+}
+
+.detail__button:hover {
+  background: linear-gradient(90deg, rgb(246, 239, 227) 0%, rgb(255, 255, 255) 49%, rgb(246, 239, 227) 100%);
+  transition: all 0.8s linear 0s;
+}
+
+.detail__size,
+.detail__text {
+  margin-bottom: 10px;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #a7987e;
+}
+
+.detail-page__item {
+  height: 545px;
+}
+
+.detail-page__item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.no-webp .detail-page__arrows .glide__arrow {
+  background: url("../img/arrow-white.png") 40% 50% no-repeat, linear-gradient(162deg, rgb(214, 213, 212) 0%, rgb(214, 213, 212) 38%, rgb(255, 255, 255) 100%); }
+
+.detail-page__arrows .glide__arrow {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  font-size: 0;
+  width: 51px;
+  height: 51px;
+  background-clip: content-box, padding-box !important;
+  border-radius: 50%;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.detail-page__arrows .glide__arrow--right {
+  left: auto;
+  right: -60px;
+  transform: rotate(180deg);
+}
+
+.no-webp .detail-page__arrows .glide__arrow:hover {
+  background: url("../img/arrow-white.png") 40% 50% no-repeat, linear-gradient(157deg, rgb(255, 255, 255) 0%, rgb(214, 213, 212) 53%, rgb(255, 255, 255) 100%); }
+
 @media all and (max-width: 1560px) {
   .gallery {
     padding: 0 40px;
@@ -783,3 +883,7 @@ body {
 .webp .front-page__right { background: url(../img/photo.webp) 0 0/cover no-repeat; }
 
 .webp .front-page-main-menu__arrows .glide__arrow { background: url(../img/arrow.webp) 40% 50% no-repeat, rgba(255, 255, 255, 0.8); }
+
+.webp .detail-page__arrows .glide__arrow { background: url(../img/arrow-white.webp) 40% 50% no-repeat, linear-gradient(162deg, rgb(214, 213, 212) 0%, rgb(214, 213, 212) 38%, rgb(255, 255, 255) 100%); }
+
+.webp .detail-page__arrows .glide__arrow:hover { background: url(../img/arrow-white.webp) 40% 50% no-repeat, linear-gradient(157deg, rgb(255, 255, 255) 0%, rgb(214, 213, 212) 53%, rgb(255, 255, 255) 100%); }

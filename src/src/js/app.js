@@ -3,6 +3,8 @@ import Vue from 'vue/dist/vue.js';
 
 globalFunctions.isWebp();
 import FrontPage from '../blocks/modules/front-page/front-page.js';
+import Detail from '../blocks/modules/detail/detail.js';
+
 
 
 
@@ -10,10 +12,14 @@ window.app = new Vue({
     el: '#app',
     data: () => ({
         frontPage: new FrontPage(),
+        detail: new Detail(),
+
         
     }),
     mounted() {
         this.frontPage.init();
+        this.detail.init();
+
         
     }
 });

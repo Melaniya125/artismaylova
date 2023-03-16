@@ -1,0 +1,93 @@
+.detail {
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__slider {
+        width: 31.5%;
+    }
+    &__about {
+        width: 28%;
+        padding-left: 5%;
+    }
+    &__about h2 {
+        font-family: 'Noto Sans Display', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 17px;
+    }
+    &__price {
+        font-family: 'Noto Sans Display', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #a7987e;
+    }
+    &__specifications {
+        margin-top: 34px;
+        padding: 17px 0;
+        margin-bottom: 42px;
+    }
+    &__button {
+        text-transform: uppercase;
+        font-family: 'Noto Sans Display', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 25px 0;
+        max-width: 308px;
+        text-align: center;
+        background: #f6efe3;
+        cursor: pointer;
+    }
+    &__button:hover {
+        background: linear-gradient(90deg, rgba(246,239,227,1) 0%, rgba(255,255,255,1) 49%, rgba(246,239,227,1) 100%);
+        transition: all .8s linear 0s;
+    }
+    &__size, &__text {
+        margin-bottom: 10px;
+        font-family: 'Noto Sans Display', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #a7987e;
+    }
+}
+.detail-page {
+    &__item {
+        // max-width: 451px;
+        height: 545px;
+    }
+    &__item img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    &__arrows .glide__arrow {
+        position: absolute;
+        top: 50%;
+        left: -60px;
+        font-size: 0;
+        width: 51px;
+        height: 51px;
+        background: url("../img/arrow-white.png") 40% 50% no-repeat, linear-gradient(162deg, rgba(214,213,212,1) 0%, rgba(214,213,212,1) 38%, rgba(255,255,255,1) 100%);
+        background-clip: content-box, padding-box !important;
+        // background: no-repeat padding-box/40% 50% url("../img/arrow.png"), rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        border: none;
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+        // transition: all .8s linear 0s;
+        
+    }
+    &__arrows .glide__arrow--right {
+        left: auto;
+        right: -60px;
+        transform: rotate(180deg);
+    }
+    &__arrows .glide__arrow:hover {
+        background: url("../img/arrow-white.png") 40% 50% no-repeat, linear-gradient(157deg, rgba(255,255,255,1) 0%, rgba(214,213,212,1) 53%, rgba(255,255,255,1) 100%);
+    }
+}
