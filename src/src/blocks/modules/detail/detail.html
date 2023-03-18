@@ -7,12 +7,18 @@
                     <div class="detail-page__slider glide">
                         <div class="glide__track" data-glide-el="track">
                             <div class="glide__slides">
-                                @@for ($i = 0; $i < 3; $i++) { 
+                                <!-- @@for ($i = 0; $i < 3; $i++) {  -->
                                     <div class="detail-page__item glide__slide">
-                                    <img src="img/art.jpg" alt="">
+                                    <img src="img/art.jpg" alt="art">
+                                </div>
+                                <div class="detail-page__item glide__slide">
+                                    <img src="img/gallery.jpg" alt="art">
+                                </div>
+                                <div class="detail-page__item glide__slide">
+                                    <img src="img/art.jpg" alt="art">
                                 </div>
     
-                            }
+                            <!-- } -->
     
                             </div>
                         </div>
@@ -23,9 +29,15 @@
                         </div>
 
                         <div class="detail-page__bullets glide__bullets" data-glide-el="controls[nav]">
-                            <button class="glide__bullet" data-glide-dir="=0"></button>
-                            <button class="glide__bullet" data-glide-dir="=1"></button>
-                            <button class="glide__bullet" data-glide-dir="=2"></button>
+                            <button class="glide__bullet" data-glide-dir="=0">
+                                <img src="img/art.jpg" alt="art">
+                            </button>
+                            <button class="glide__bullet" data-glide-dir="=1">
+                                <img src="img/gallery.jpg" alt="art">
+                            </button>
+                            <button class="glide__bullet" data-glide-dir="=2">
+                                <img src="img/art.jpg" alt="art">
+                            </button>
                           </div>
     
     
@@ -43,6 +55,18 @@
 
 
 
+            </div>
+
+            <div class="detail__socials">
+                <a href="#" class="socials-item">
+                    <img src="img/icon_pochta.svg" alt="">
+                </a>
+                <a href="#" class="socials-item">
+                    <img src="img/icon_wotsapik.svg" alt="">
+                </a>
+                <a href="#" class="socials-item">
+                    <img src="img/icon_telega.svg" alt="">
+                </a>
             </div>
         </div>
     </div>

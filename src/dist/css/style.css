@@ -516,11 +516,19 @@ body {
   box-shadow: 8px 8px 7px 4px rgba(0, 0, 0, 0.2);
 }
 
+.front-page-main-menu__arrows .glide__arrow:hover {
+  box-shadow: 3px 10px 12px 5px rgba(139, 136, 136, 0.4);
+}
+
 .front-page-main-menu__arrows .glide__arrow--right {
   left: auto;
   right: -76px;
   transform: rotate(180deg);
   box-shadow: -8px -8px 7px 4px rgba(0, 0, 0, 0.2);
+}
+
+.front-page-main-menu__arrows .glide__arrow--right:hover {
+  box-shadow: -3px -10px 12px 5px rgba(139, 136, 136, 0.4);
 }
 
 .front-page-main-menu__item img {
@@ -559,6 +567,10 @@ body {
   text-align: center;
   box-sizing: border-box;
   box-shadow: 3px 10px 12px 5px rgba(0, 0, 0, 0.4);
+}
+
+.front-page-main-menu__list li:hover {
+  box-shadow: 3px 10px 12px 5px rgba(139, 136, 136, 0.4);
 }
 
 .front-page-main-menu__list li:not(:last-child) {
@@ -833,6 +845,26 @@ body {
   color: #a7987e;
 }
 
+.detail__socials {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 46px;
+  margin-bottom: 37px;
+}
+
+.detail__socials .socials-item img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.detail__socials .socials-item:not(:last-child) {
+  margin-right: 54px;
+}
+
 .detail-page__item {
   height: 545px;
 }
@@ -849,7 +881,7 @@ body {
 
 .detail-page__arrows .glide__arrow {
   position: absolute;
-  top: 46%;
+  top: 37%;
   left: -60px;
   font-size: 0;
   width: 51px;
@@ -870,6 +902,34 @@ body {
 
 .no-webp .detail-page__arrows .glide__arrow:hover {
   background: url("../img/arrow-white.png") 40% 50% no-repeat, linear-gradient(157deg, rgb(255, 255, 255) 0%, rgb(214, 213, 212) 53%, rgb(255, 255, 255) 100%); }
+
+.detail-page__bullets {
+  display: flex;
+  align-items: center;
+  width: 62%;
+  margin: 0 auto;
+  margin-top: 11px;
+}
+
+.detail-page__bullets .glide__bullet {
+  max-width: 90px;
+  height: 107px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.detail-page__bullets .glide__bullet:not(:last-child) {
+  margin-right: 5px;
+}
+
+.detail-page__bullets .glide__bullet img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
 
 @media all and (max-width: 1560px) {
   .gallery {

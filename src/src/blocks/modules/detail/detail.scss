@@ -51,6 +51,22 @@
         font-weight: 400;
         color: #a7987e;
     }
+    &__socials {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 46px;
+        margin-bottom: 37px;
+        .socials-item img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+        .socials-item:not(:last-child) {
+            margin-right: 54px;
+        }
+    }
 }
 .detail-page {
     &__item {
@@ -64,7 +80,7 @@
     }
     &__arrows .glide__arrow {
         position: absolute;
-        top: 46%;
+        top: 37%;
         left: -60px;
         font-size: 0;
         width: 51px;
@@ -89,5 +105,28 @@
     }
     &__arrows .glide__arrow:hover {
         background: url("../img/arrow-white.png") 40% 50% no-repeat, linear-gradient(157deg, rgba(255,255,255,1) 0%, rgba(214,213,212,1) 53%, rgba(255,255,255,1) 100%);
+    }
+    &__bullets {
+        display: flex;
+        align-items: center;
+        width: 62%;
+        margin: 0 auto;
+        margin-top: 11px;
+        .glide__bullet {
+            max-width: 90px;
+            height: 107px;
+            width: 100%;
+            padding: 0;
+            border: none;
+            cursor: pointer;
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
+        }
+        .glide__bullet img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
     }
 }

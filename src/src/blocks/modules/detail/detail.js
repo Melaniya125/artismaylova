@@ -14,6 +14,7 @@ const Detail = class Detail {
             swipeThreshold: false,
             dragThreshold: false,
             type: 'carousel',
+            animationDuration: 1500,
             breakpoints: {
                 1131: {
                     perView: 1

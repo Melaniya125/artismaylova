@@ -99,6 +99,9 @@
         -webkit-box-shadow: 8px 8px 7px 4px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: 8px 8px 7px 4px rgba(0, 0, 0, 0.2);
         box-shadow: 8px 8px 7px 4px rgba(0, 0, 0, 0.2);
+        &:hover {
+            box-shadow: 3px 10px 12px 5px rgb(139 136 136 / 40%);
+        }
         
     }
     &__arrows .glide__arrow--right {
@@ -108,6 +111,9 @@
         -webkit-box-shadow: -8px -8px 7px 4px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: -8px -8px 7px 4px rgba(0, 0, 0, 0.2);
         box-shadow: -8px -8px 7px 4px rgba(0, 0, 0, 0.2);
+        &:hover {
+            box-shadow: -3px -10px 12px 5px rgb(139 136 136 / 40%);
+        }
     }
     &__item {
         img {
@@ -148,6 +154,9 @@
         -webkit-box-shadow: 3px 10px 12px 5px rgba(0, 0, 0, 0.4);
         -moz-box-shadow: 3px 10px 12px 5px rgba(0, 0, 0, 0.4);
         box-shadow: 3px 10px 12px 5px rgba(0, 0, 0, 0.4);
+        &:hover {
+            box-shadow: 3px 10px 12px 5px rgb(139 136 136 / 40%);
+        }
     }
     &__list li:not(:last-child) {
         margin-bottom: 46px;
