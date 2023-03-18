@@ -1,7 +1,6 @@
 .detail {
     &__info {
         display: flex;
-        align-items: center;
         justify-content: flex-end;
     }
     &__slider {
@@ -10,6 +9,7 @@
     &__about {
         width: 28%;
         padding-left: 5%;
+        margin-top: 55px;
     }
     &__about h2 {
         font-family: 'Noto Sans Display', sans-serif;

@@ -716,7 +716,6 @@ body {
 
 .detail__info {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
 }
 
@@ -727,6 +726,7 @@ body {
 .detail__about {
   width: 28%;
   padding-left: 5%;
+  margin-top: 55px;
 }
 
 .detail__about h2 {
