@@ -24,10 +24,13 @@
         text-decoration: none;
         font-family: 'Noto Sans Display', sans-serif;
         font-size: 36px;
-        font-weight: 400;
+        font-weight: 400;    
     }
     &__menu-item {
-        position: relative;
+        position: relative;    
+    }
+    &__menu-item.--brown a {
+        color: #a7987e;
     }
     &__menu-item:before {
         content: "";
@@ -45,6 +48,9 @@
         -webkit-transform: translateX(0);
         -moz-transform: translateX(0);
         transform: translateX(0);
+    }
+    &__menu-item.--brown:before {
+        background-color: #a7987e;
     }
     &__menu-item:hover:before {
         opacity: 1;
