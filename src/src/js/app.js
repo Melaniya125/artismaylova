@@ -34,3 +34,13 @@ window.app = new Vue({
 // $(document).ready(function() {
 //     // window.placesAndCases.init();
 // });
+
+jQuery(document).ready(function() {
+    document.querySelector('.header__burger').addEventListener('click', () => {
+        document.querySelector('.header__mobile').classList.add('open');
+    });
+
+    document.querySelector('.header__mobile-close').addEventListener('click', () => {
+        document.querySelector('.header__mobile').classList.remove('open');
+    });
+})

@@ -1,9 +1,11 @@
 .header {
     //padding: 76px 0 60px 0;
     padding: 42px 0 60px 0;
+    position: relative;
     @media all and (max-width:991px) {
         padding: 10px 20px 15px 20px;
     }
+   
     &__in {
         @media all and (max-width:991px) {
             display: flex;
@@ -27,6 +29,56 @@
             font-weight: 600;
             text-transform: none;
             text-align: left;
+        }
+    }
+    &__mobile {
+        display: none;
+        @media all and (max-width:991px) {
+            width: 60%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: rgba(229, 219, 203, 0.9);
+            z-index: 10;
+        }
+    }
+    &__mobile.open {
+        @media all and (max-width:991px) {
+            display: block;
+        }
+    }
+    &__menu-mobile-list {
+        list-style: none;
+        padding: 8px;
+        padding-top: 75px;
+        li a {
+            text-decoration: none;
+            font-size: 24px;
+            line-height: 33px;
+            font-family: 'Cormorant Infant';
+            font-weight: 600;
+            display: block;
+        }
+        li:not(:last-child) {
+            margin-bottom: 45px;
+        }
+    }
+    &__mobile-close {
+        div {
+            position: absolute;
+            top: 25px;
+            right: 15px;
+            width: 40px;
+            height: 5px;
+            border-radius: 5px;
+            background-color: #000;
+        }
+        div:last-child {
+            transform: rotate(45deg);
+        }
+        div:first-child {
+            transform: rotate(-45deg);
         }
     }
     &__burger {
