@@ -21,7 +21,7 @@
             width: 100%;
         }
         @media all and (max-width:991px) {
-            background: none !important;
+        background: url("../img/background-mobile.jpg") 20% 0/cover no-repeat;
             padding: 10px 20px 30px;
         }
         h2 {

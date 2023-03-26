@@ -1247,12 +1247,6 @@ body {
 }
 
 @media all and (max-width: 991px) {
-  .no-webp body {
-    background: url("../img/background-mobile.png"); }
-  body {
-    background-position: 100% 50% !important;
-  }
-
   .front-page__header {
     display: flex;
     align-items: center;
@@ -1260,8 +1254,10 @@ body {
     margin-bottom: 30px;
   }
 
+  .no-webp .front-page__left {
+    background: url("../img/background-mobile.jpg") 20% 0/cover no-repeat; }
+
   .front-page__left {
-    background: none !important;
     padding: 10px 20px 30px;
   }
 
@@ -1362,6 +1358,7 @@ body {
     font-weight: 600;
     text-transform: none;
     text-align: left;
+    max-width: 270px;
   }
 
   .header__mobile {
@@ -1405,5 +1402,5 @@ body {
 
 @media all and (max-width: 991px) {
 
-  .webp body { background: url(../img/background-mobile.webp); }
+  .webp .front-page__left { background: url(../img/background-mobile.webp) 20% 0/cover no-repeat; }
 }

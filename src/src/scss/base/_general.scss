@@ -5,10 +5,10 @@
 }
 body {
     background: #fffcf7;
-    @media all and (max-width:991px) {
-        background: url("../img/background-mobile.png");
-        background-position: 100% 50% !important;
-    }
+    // @media all and (max-width:991px) {
+    //     background: url("../img/background-mobile.png");
+    //     background-position: 100% 50% !important;
+    // }
 }
 .container {
     max-width: 1440px;
