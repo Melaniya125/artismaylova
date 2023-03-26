@@ -1,27 +1,64 @@
 .gallery {
+    &__in h2 {
+        display: none;
+        @media all and (max-width:991px) {
+            display: block;
+            text-transform: uppercase;
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 400;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
     padding-bottom: 154px;
     @media all and (max-width:1560px) {
         padding: 0 40px;
         padding-bottom: 80px;
     }
+    @media all and (max-width:991px) {
+        padding: 0 20px;
+    }
     &__list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 53px 100px;
+        @media all and (max-width:991px) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 24px;
+        }
     }
     &__item {
         text-decoration: none;
     }
-    &__item span {
-        display: block;
+    &__title,
+    &__price {
         text-align: center;
         font-family: 'Noto Sans Display', sans-serif;
         font-size: 38px;
         font-weight: 400;
         margin-top: 8px;
+        @media all and (max-width:1200px) {
+            font-size: 26px;
+        }
+        @media all and (max-width:991px) {
+            margin-top: 4px;
+            font-size: 16px;
+            line-height: 16px;
+            text-align: left;
+            font-weight: 600;
+        }
+    }
+    &__title {
+        display: block;
     }
     &__image img {
         width: 100%;
         object-fit: cover;
+    }
+    &__price {
+        display: none;
+        @media all and (max-width:991px) {
+            display: block;
+        }
     }
 }

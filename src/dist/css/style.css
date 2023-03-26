@@ -689,6 +689,10 @@ body {
   padding-bottom: 154px;
 }
 
+.gallery__in h2 {
+  display: none;
+}
+
 .gallery__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -699,8 +703,8 @@ body {
   text-decoration: none;
 }
 
-.gallery__item span {
-  display: block;
+.gallery__title,
+.gallery__price {
   text-align: center;
   font-family: "Noto Sans Display", sans-serif;
   font-size: 38px;
@@ -708,10 +712,18 @@ body {
   margin-top: 8px;
 }
 
+.gallery__title {
+  display: block;
+}
+
 .gallery__image img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.gallery__price {
+  display: none;
 }
 
 .detail__info {
@@ -872,7 +884,23 @@ body {
   font-weight: bold;
   text-align: center;
   margin: 0;
+  text-transform: uppercase;
   margin-bottom: 15px;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__burger div {
+  width: 62px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #000;
+}
+
+.header__burger div:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .header__menu-list-items {
@@ -1051,6 +1079,79 @@ body {
   }
 }
 
+@media all and (max-width: 1200px) {
+  .gallery__title,
+  .gallery__price {
+    font-size: 26px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .no-webp body {
+    background: url("../img/background-mobile.png"); }
+  body {
+    background-position: 100% 50% !important;
+  }
+
+  .gallery__in h2 {
+    display: block;
+    text-transform: uppercase;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .gallery {
+    padding: 0 20px;
+  }
+
+  .gallery__list {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+  }
+
+  .gallery__title,
+  .gallery__price {
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .gallery__price {
+    display: block;
+  }
+
+  .header {
+    padding: 10px 20px 15px 20px;
+  }
+
+  .header__in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__in h2 {
+    font-family: "Cormorant Infant";
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 600;
+    text-transform: none;
+    text-align: left;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+  .header__menu {
+    display: none;
+  }
+}
+
 .webp .front-page__left { background: url(../img/background2.webp) 0 -85px/cover no-repeat; }
 
 .webp .front-page__right { background: url(../img/photo.webp) 0 0/cover no-repeat; }
@@ -1060,3 +1161,8 @@ body {
 .webp .detail-page__arrows .glide__arrow { background: url(../img/arrow-white.webp) 40% 50% no-repeat, linear-gradient(162deg, rgb(214, 213, 212) 0%, rgb(214, 213, 212) 38%, rgb(255, 255, 255) 100%); }
 
 .webp .detail-page__arrows .glide__arrow:hover { background: url(../img/arrow-white.webp) 40% 50% no-repeat, linear-gradient(157deg, rgb(255, 255, 255) 0%, rgb(214, 213, 212) 53%, rgb(255, 255, 255) 100%); }
+
+@media all and (max-width: 991px) {
+
+  .webp body { background: url(../img/background-mobile.webp); }
+}
