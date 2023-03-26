@@ -939,6 +939,111 @@ body {
   background-color: #7d7d7d;
 }
 
+.contacts__flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contacts__product {
+  width: 31.5%;
+}
+
+.contacts__product span {
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #1a1210;
+}
+
+.contacts__product-image {
+  max-width: 451px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+.contacts__product-image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.contacts__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 35px;
+}
+
+.contacts__socials a {
+  width: 54px;
+  margin-right: 54px;
+}
+
+.contacts__socials a img {
+  max-width: 54px;
+}
+
+.error {
+  height: 100%;
+  background-color: #eae4da;
+  padding: 0 0 240px 0;
+  position: relative;
+}
+
+.error__number {
+  font-size: 550px;
+  text-transform: uppercase;
+  color: #ffd655;
+  display: table;
+  font-weight: 900;
+  margin-right: 20px;
+  margin: 0 auto;
+  text-shadow: 30px 39px 26px rgba(186, 158, 122, 0.98);
+  -webkit-text-stroke: 10px #fff;
+}
+
+.error__button {
+  display: block;
+  text-transform: uppercase;
+  color: #000;
+  font-family: "Noto Sans Display", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 400px;
+  width: 100%;
+  background: linear-gradient(180deg, #fab248 40%, #ffd654 100%);
+  border: 5px solid #fff;
+  box-shadow: 13px 8px 32px rgba(186, 158, 122, 0.98);
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.error__girl {
+  position: absolute;
+  bottom: 0;
+  left: 255px;
+}
+
+.error__girl img {
+  max-width: 292px;
+}
+
+.error__table {
+  position: absolute;
+  bottom: 0;
+  right: 90px;
+}
+
+.error__table img {
+  max-width: 350px;
+}
+
 @media all and (max-width: 1560px) {
   .gallery {
     padding: 0 40px;

@@ -1,0 +1,56 @@
+.error {
+    height: 100%;
+    background-color: #eae4da;
+    padding: 0 0 240px 0;
+    position: relative;
+    &__number {
+    font-size: 550px;
+    // font-family: "Roboto";
+    text-transform: uppercase;
+    // background: linear-gradient(180deg, #fab248 40%, #ffd654 100%);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    color: #ffd655;
+    display: table;
+    font-weight: 900;
+    margin-right: 20px;
+    margin: 0 auto;
+    text-shadow: 30px 39px 26px rgba(186, 158, 122, 0.98);
+    -webkit-text-stroke:10px #fff
+    }
+    &__button {
+        display: block;
+        text-transform: uppercase;
+        color: #000;
+        font-family: "Noto Sans Display", sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        margin: 0 auto;
+        padding: 20px 0;
+        max-width: 400px;
+        width: 100%;
+        background: linear-gradient(180deg, #fab248 40%, #ffd654 100%);
+        border: 5px solid #fff;
+        box-shadow: 13px 8px 32px rgba(186, 158, 122, 0.98);
+        border-radius: 100px;
+        text-align: center;
+        text-decoration: none;
+    }
+    &__girl {
+        position: absolute;
+        bottom: 0;
+        left: 255px;
+        img {
+            max-width: 292px;
+
+        }
+    }
+    &__table {
+        position: absolute;
+        bottom: 0;
+        right: 90px;
+        img {
+            max-width: 350px;
+        }
+    }
+}
