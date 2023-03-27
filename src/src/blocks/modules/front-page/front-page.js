@@ -11,7 +11,7 @@ const FrontPage = class FrontPage {
         this.slider = new Glide('.front-page-main-menu__slider.glide', {
             perView: 1,
             gap: 20,
-            swipeThreshold: false,
+            swipeThreshold: true,
             dragThreshold: false,
             type: 'carousel',
             animationDuration: 1500,
@@ -19,8 +19,9 @@ const FrontPage = class FrontPage {
                 1131: {
                     perView: 1
                 },
-                0: {
-                    perView: 1
+                991: {
+                    perView: 1,
+                    autoplay: 3000
                 }
             },
         }).mount()

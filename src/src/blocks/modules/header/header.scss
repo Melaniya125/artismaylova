@@ -40,7 +40,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            background: rgba(229, 219, 203, 0.9);
+            background: rgba(229, 219, 203, 1);
             z-index: 10;
         }
     }
@@ -62,7 +62,7 @@
             display: block;
         }
         li:not(:last-child) {
-            margin-bottom: 45px;
+            margin-bottom: 40px;
         }
     }
     &__mobile-close {
@@ -116,7 +116,10 @@
         text-decoration: none;
         font-family: 'Noto Sans Display', sans-serif;
         font-size: 36px;
-        font-weight: 400;    
+        font-weight: 400;   
+        @media all and (max-width:1350px) {
+            font-size: 24px;
+        } 
     }
     &__menu-item {
         position: relative;    
