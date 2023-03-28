@@ -10,15 +10,25 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        @media all and (max-width:991px) {
+            padding-bottom: 40px;
+        }
     }
     &__form {
         margin-right: 30px;
+        @media all and (max-width:991px) {
+            width: 100%;
+            margin-right: 0;
+        }
     }
     &__image img {
         width: 100%;
     }
     &__product {
         width: 31.5%;
+        @media all and (max-width:991px) {
+            display: none;
+        }
         span {
             font-family: "Noto Sans Display", sans-serif;
             font-weight: 400;
@@ -48,6 +58,9 @@
         justify-content: center;
         margin-top: 60px;
         margin-bottom: 35px;
+        @media all and (max-width:991px) {
+            display: none;
+        }
         a {
             width: 54px;
             margin-right: 54px;
@@ -61,5 +74,36 @@
                 max-width: 45px;
             }
         }
+    }
+    &__info {
+        display: none;
+        font-family: 'PT Sans', sans-serif;
+        @media all and (max-width:991px) {
+            display: block;
+        }
+        h2 {
+            margin: 0;
+            font-size: 16px;
+            margin-bottom: 26px;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+    }
+    &__mail,
+    &__phone {
+        font-size: 16px;
+        margin-bottom: 12px;
+        line-height: 29px;
+        a {
+            text-decoration: none;
+        }
+    }
+    &__mail {
+        margin-bottom: 40px;
+    }
+    &__form-title {
+        font-size: 14px;
+        margin-bottom: 8px;
+        display: block;
     }
 }

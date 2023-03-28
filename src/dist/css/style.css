@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -411,7 +413,7 @@ body {
   max-width: 45px !important;
 }
 
-.no-webp .front-page__left {
+.no-webp .front-page__left{
   background: url("../img/background-mobile.jpg") 0 0/cover no-repeat; }
 
 .front-page__left {
@@ -440,7 +442,7 @@ body {
   transform: translate(-50%, 9%);
 }
 
-.no-webp .front-page__right {
+.no-webp .front-page__right{
   background: url("../img/photo.jpg") 17% 50%/cover no-repeat; }
 
 .front-page__right {
@@ -524,7 +526,7 @@ body {
   width: 50%;
 }
 
-.no-webp .front-page-main-menu__arrows .glide__arrow {
+.no-webp .front-page-main-menu__arrows .glide__arrow{
   background: url("../img/arrow.png") 40% 50% no-repeat, rgba(255, 255, 255, 0.8); }
 
 .front-page-main-menu__arrows .glide__arrow {
@@ -637,6 +639,7 @@ body {
   margin-bottom: 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 18px;
   border-radius: 27px;
   background: rgba(255, 255, 255, 0.8);
@@ -659,8 +662,8 @@ body {
   pointer-events: none;
 }
 
-.front-page-bottom-menu__list li:not(:last-child) {
-  margin-right: 5%;
+.front-page-bottom-menu__list li {
+  width: 20%;
 }
 
 .glide {
@@ -739,7 +742,7 @@ body {
 }
 
 .gallery {
-  padding-bottom: 154px;
+  padding-bottom: 90px;
 }
 
 .gallery__in h2 {
@@ -777,6 +780,27 @@ body {
 
 .gallery__price {
   display: none;
+}
+
+.gallery__image {
+  position: relative;
+}
+
+.gallery__image:before {
+  content: "продано";
+  position: absolute;
+  top: 13px;
+  left: -10px;
+  width: 165px;
+  height: 40px;
+  background: #ebe1cf;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  color: #000;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .detail__info {
@@ -872,7 +896,7 @@ body {
   height: 100%;
 }
 
-.no-webp .detail-page__arrows .glide__arrow {
+.no-webp .detail-page__arrows .glide__arrow{
   background: url("../img/arrow-white.png") 40% 50% no-repeat, linear-gradient(162deg, rgb(214, 213, 212) 0%, rgb(214, 213, 212) 38%, rgb(255, 255, 255) 100%); }
 
 .detail-page__arrows .glide__arrow {
@@ -896,7 +920,7 @@ body {
   transform: rotate(180deg);
 }
 
-.no-webp .detail-page__arrows .glide__arrow:hover {
+.no-webp .detail-page__arrows .glide__arrow:hover{
   background: url("../img/arrow-white.png") 40% 50% no-repeat, linear-gradient(157deg, rgb(255, 255, 255) 0%, rgb(214, 213, 212) 53%, rgb(255, 255, 255) 100%); }
 
 .detail-page__bullets {
@@ -1117,23 +1141,59 @@ body {
   max-width: 54px;
 }
 
+.contacts__info {
+  display: none;
+  font-family: "PT Sans", sans-serif;
+}
+
+.contacts__info h2 {
+  margin: 0;
+  font-size: 16px;
+  margin-bottom: 26px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.contacts__mail,
+.contacts__phone {
+  font-size: 16px;
+  margin-bottom: 12px;
+  line-height: 29px;
+}
+
+.contacts__mail a,
+.contacts__phone a {
+  text-decoration: none;
+}
+
+.contacts__mail {
+  margin-bottom: 40px;
+}
+
+.contacts__form-title {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
 .error {
   height: 100%;
   background-color: #eae4da;
-  padding: 0 0 240px 0;
+  padding: 0 0 220px 0;
   position: relative;
+  overflow: hidden;
 }
 
 .error__number {
-  font-size: 550px;
-  text-transform: uppercase;
-  color: #ffd655;
-  display: table;
-  font-weight: 900;
-  margin-right: 20px;
+  max-width: 1200px;
   margin: 0 auto;
-  text-shadow: 30px 39px 26px rgba(186, 158, 122, 0.98);
-  -webkit-text-stroke: 10px #fff;
+  padding-top: 170px;
+}
+
+.error__number img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .error__button {
@@ -1144,7 +1204,7 @@ body {
   font-weight: 400;
   font-size: 40px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 10px 0;
   max-width: 400px;
   width: 100%;
   background: linear-gradient(180deg, #fab248 40%, #ffd654 100%);
@@ -1158,21 +1218,53 @@ body {
 .error__girl {
   position: absolute;
   bottom: 0;
-  left: 255px;
+  right: 75%;
 }
 
 .error__girl img {
-  max-width: 292px;
+  max-width: 280px;
 }
 
 .error__table {
   position: absolute;
   bottom: 0;
-  right: 90px;
+  left: 75%;
 }
 
 .error__table img {
-  max-width: 350px;
+  max-width: 300px;
+}
+
+.error__mobile {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+  padding: 150px 0;
+}
+
+.error__mobile span {
+  font-family: "PT Sans", sans-serif;
+  font-size: 72px;
+  color: #6a4b27;
+}
+
+.error__mobile-button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #000;
+  padding: 10px 0;
+  max-width: 150px;
+  width: 100%;
+  border-radius: 28px;
+  border: 2px solid #d1cfcd;
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 130px;
+  box-shadow: 5px 8px 9px 2px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
 }
 
 @media all and (max-width: 1650px) {
@@ -1210,10 +1302,6 @@ body {
 
   .front-page-bottom-menu__list li a {
     font-size: 21px;
-  }
-
-  .front-page-bottom-menu__list li:not(:last-child) {
-    margin-right: 3%;
   }
 }
 
@@ -1279,6 +1367,26 @@ body {
   .gallery__price {
     font-size: 26px;
   }
+
+  .error__number {
+    max-width: 800px;
+    padding-top: 110px;
+  }
+
+  .error__button {
+    font-size: 30px;
+    max-width: 280px;
+    padding: 6px 0;
+    border: 3px solid #fff;
+  }
+
+  .error__girl img {
+    max-width: 220px;
+  }
+
+  .error__table img {
+    max-width: 245px;
+  }
 }
 
 @media all and (max-width: 991px) {
@@ -1315,7 +1423,7 @@ body {
     margin-top: 30px;
   }
 
-  .no-webp .front-page__left {
+  .no-webp .front-page__left{
     background: url("../img/background-mobile.jpg") 13% 0/cover no-repeat; }
 
   .front-page__left {
@@ -1449,12 +1557,29 @@ body {
     padding: 0 20px 30px 20px;
   }
 
+  .contacts__flex {
+    padding-bottom: 40px;
+  }
+
+  .contacts__form {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .contacts__product {
+    display: none;
+  }
+
   .contacts__product span {
     font-size: 18px;
   }
 
   .contacts__product-image {
     margin-bottom: 15px;
+  }
+
+  .contacts__socials {
+    display: none;
   }
 
   .contacts__socials a {
@@ -1464,12 +1589,45 @@ body {
   .contacts__socials a img {
     max-width: 45px;
   }
+
+  .contacts__info {
+    display: block;
+  }
+
+  .no-webp .error{
+    background: url("../img/background-mobile.jpg") 0 0/cover no-repeat; }
+
+  .error__number {
+    display: none;
+  }
+
+  .error__button {
+    display: none;
+  }
+
+  .error__girl {
+    display: none;
+  }
+
+  .error__table {
+    display: none;
+  }
+
+  .error__mobile {
+    display: block;
+  }
 }
 
 @media all and (max-width: 600px) {
   .front-page-main-menu__slider {
     margin: 0 auto;
     max-width: 259px;
+  }
+
+  .gallery__image:before {
+    font-size: 14px;
+    width: 90px;
+    height: 22px;
   }
 }
 
@@ -1479,17 +1637,28 @@ body {
   }
 }
 
-.webp .front-page__left { background: url(../img/background-mobile.webp) 0 0/cover no-repeat; }
+@media all and (max-width: 450px) {
+  .error__mobile {
+    padding: 87px 0 190px;
+  }
+}
 
-.webp .front-page__right { background: url(../img/photo.webp) 17% 50%/cover no-repeat; }
+.webp .front-page__left{ background: url(../img/background-mobile.webp) 0 0/cover no-repeat; }
 
-.webp .front-page-main-menu__arrows .glide__arrow { background: url(../img/arrow.webp) 40% 50% no-repeat, rgba(255, 255, 255, 0.8); }
+.webp .front-page__right{ background: url(../img/photo.webp) 17% 50%/cover no-repeat; }
 
-.webp .detail-page__arrows .glide__arrow { background: url(../img/arrow-white.webp) 40% 50% no-repeat, linear-gradient(162deg, rgb(214, 213, 212) 0%, rgb(214, 213, 212) 38%, rgb(255, 255, 255) 100%); }
+.webp .front-page-main-menu__arrows .glide__arrow{ background: url(../img/arrow.webp) 40% 50% no-repeat, rgba(255, 255, 255, 0.8); }
 
-.webp .detail-page__arrows .glide__arrow:hover { background: url(../img/arrow-white.webp) 40% 50% no-repeat, linear-gradient(157deg, rgb(255, 255, 255) 0%, rgb(214, 213, 212) 53%, rgb(255, 255, 255) 100%); }
+.webp .detail-page__arrows .glide__arrow{ background: url(../img/arrow-white.webp) 40% 50% no-repeat, linear-gradient(162deg, rgb(214, 213, 212) 0%, rgb(214, 213, 212) 38%, rgb(255, 255, 255) 100%); }
 
-@media all and (max-width: 991px) {
+.webp .detail-page__arrows .glide__arrow:hover{ background: url(../img/arrow-white.webp) 40% 50% no-repeat, linear-gradient(157deg, rgb(255, 255, 255) 0%, rgb(214, 213, 212) 53%, rgb(255, 255, 255) 100%); }
 
-  .webp .front-page__left { background: url(../img/background-mobile.webp) 13% 0/cover no-repeat; }
+@media all and (max-width: 991px){
+
+  .webp .front-page__left{ background: url(../img/background-mobile.webp) 13% 0/cover no-repeat; }
+}
+
+@media all and (max-width: 991px){
+
+  .webp .error{ background: url(../img/background-mobile.webp) 0 0/cover no-repeat; }
 }
