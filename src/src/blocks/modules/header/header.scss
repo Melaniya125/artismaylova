@@ -3,7 +3,7 @@
     padding: 42px 0 60px 0;
     position: relative;
     @media all and (max-width:991px) {
-        padding: 10px 20px 15px 20px;
+        padding: 10px 30px 15px 30px;
     }
    
     &__in {
@@ -53,6 +53,7 @@
         list-style: none;
         padding: 8px;
         padding-top: 75px;
+        height: 100vh;
         li a {
             text-decoration: none;
             font-size: 24px;

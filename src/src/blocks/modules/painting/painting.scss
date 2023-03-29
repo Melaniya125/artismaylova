@@ -1,0 +1,83 @@
+.painting {
+   
+    &__in {
+        @media all and (max-width:1560px) {
+            padding: 0 40px;
+        }
+        @media all and (max-width:991px) {
+            padding: 0 20px;
+        }
+        h2 {
+            display: none;
+            @media all and (max-width:991px) {
+                display: block;
+                font-family: 'PT Sans', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                margin-top: 0;
+                margin-bottom: 36px;
+                padding: 0 10px;
+                text-transform: uppercase;
+            }
+            @media all and (max-width:400px) {
+                max-width: 200px;
+                line-height: 22px;
+            }
+        }
+        
+    }
+    &__list-in {
+        // display: grid;
+        // grid-template-columns: 1fr 1fr 1fr;
+        // grid-gap: 53px 100px;
+        margin-bottom: 47px;
+        @media all and (max-width:991px) {
+            margin-bottom: 25px;
+        }
+    }
+    &__item {
+        @media all and (max-width:991px) {
+            justify-content: center;
+            display: flex;
+        }
+    }
+    &__item img {
+        max-height: 488px;
+        min-height: 488px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        @media all and (max-width:991px) {
+            max-width: 380px;
+            max-height: 440px;
+            min-height: 440px;
+        }
+        @media all and (max-width:460px) {
+            max-width: 239px;
+            max-height: 282px;
+            min-height: 282px;
+        }
+    }
+    &__text {
+        max-width: 575px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 52px;
+        font-size: 24px;
+        @media all and (max-width:991px) {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 16px;
+            line-height: 23px;
+            max-width: 380px;
+            box-sizing: border-box;
+        }
+        @media all and (max-width:460px) {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 16px;
+            line-height: 23px;
+            max-width: 239px;
+            box-sizing: border-box;
+        }
+
+    }
+}

@@ -4,6 +4,8 @@ import Vue from 'vue/dist/vue.js';
 globalFunctions.isWebp();
 import FrontPage from '../blocks/modules/front-page/front-page.js';
 import Detail from '../blocks/modules/detail/detail.js';
+import Painting from '../blocks/modules/painting/painting.js';
+
 
 
 
@@ -13,12 +15,16 @@ window.app = new Vue({
     data: () => ({
         frontPage: new FrontPage(),
         detail: new Detail(),
+        detail: new Painting(),
+
 
         
     }),
     mounted() {
         this.frontPage.init();
         this.detail.init();
+        this.painting.init();
+
 
         
     }
