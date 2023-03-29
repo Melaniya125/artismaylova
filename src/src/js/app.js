@@ -15,7 +15,7 @@ window.app = new Vue({
     data: () => ({
         frontPage: new FrontPage(),
         detail: new Detail(),
-        detail: new Painting(),
+        painting: new Painting(),
 
 
         
