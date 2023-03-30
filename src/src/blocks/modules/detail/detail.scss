@@ -2,14 +2,44 @@
     &__info {
         display: flex;
         justify-content: flex-end;
+        @media all and (max-width:1320px) {
+            padding: 0 60px;
+        }
+        @media all and (max-width:991px) {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        @media all and (max-width:600px) {
+            padding: 0 20px;
+        }
     }
     &__slider {
         width: 31.5%;
+        @media all and (max-width:1320px) {
+            width: 48%;
+        }
+        @media all and (max-width:991px) {
+            width: 100%;
+        }
     }
     &__about {
         width: 28%;
         padding-left: 5%;
         margin-top: 55px;
+        @media all and (max-width:1320px) {
+            width: 40%;
+            padding-left: 10%;
+        }
+        @media all and (max-width:991px) {
+            width: 100%;
+            padding-left: 0;
+            max-width: 400px;
+        }
+        @media all and (max-width:600px) {
+            margin-top: 30px;
+            max-width: 259px;
+        }
     }
     &__about h2 {
         font-family: 'Noto Sans Display', sans-serif;
@@ -17,17 +47,27 @@
         font-size: 36px;
         margin-top: 0;
         margin-bottom: 5px;
+        @media all and (max-width:600px) {
+            font-size: 24px;
+        }
     }
     &__price {
         font-family: 'Noto Sans Display', sans-serif;
         font-size: 24px;
         font-weight: 400;
         color: #a7987e;
+        @media all and (max-width:600px) {
+            font-size: 18px;
+        }
     }
     &__specifications {
         margin-top: 34px;
         padding: 17px 0;
         margin-bottom: 42px;
+        @media all and (max-width:991px) {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
     }
     &__button {
         text-transform: uppercase;
@@ -39,6 +79,11 @@
         text-align: center;
         background: #f6efe3;
         cursor: pointer;
+        @media all and (max-width:991px) {
+            max-width: 100%;
+            font-size: 16px;
+            padding: 18px 0;
+        }
     }
     &__button:hover {
         background: linear-gradient(90deg, rgba(246,239,227,1) 0%, rgba(255,255,255,1) 49%, rgba(246,239,227,1) 100%);
@@ -50,6 +95,9 @@
         font-size: 24px;
         font-weight: 400;
         color: #a7987e;
+        @media all and (max-width:600px) {
+            font-size: 18px;
+        }
     }
     &__socials {
         display: flex;
@@ -72,11 +120,24 @@
     &__item {
         // max-width: 451px;
         height: 545px;
+        @media all and (max-width:991px) {
+            text-align: center;
+        }
+        @media all and (max-width:600px) {
+            height: 332px;
+           
+        }
     }
     &__item img {
         width: 100%;
         object-fit: cover;
         height: 100%;
+        @media all and (max-width:991px) {
+            max-width: 400px;
+        }
+        @media all and (max-width:600px) {
+            max-width: 259px;
+        }
     }
     &__arrows .glide__arrow {
         position: absolute;
@@ -96,6 +157,9 @@
         -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
         box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
         // transition: all .8s linear 0s;
+        @media all and (max-width:991px) {
+            display: none;
+        }
         
     }
     &__arrows .glide__arrow--right {
@@ -112,6 +176,8 @@
         width: 62%;
         margin: 0 auto;
         margin-top: 11px;
+        justify-content: center;
+       
         .glide__bullet {
             max-width: 90px;
             height: 107px;
@@ -119,6 +185,10 @@
             padding: 0;
             border: none;
             cursor: pointer;
+            @media all and (max-width:600px) {
+                height: 70px;
+                max-width: 51px;
+            }
             &:not(:last-child) {
                 margin-right: 5px;
             }

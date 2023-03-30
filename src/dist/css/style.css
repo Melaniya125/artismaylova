@@ -933,6 +933,7 @@ body {
   width: 62%;
   margin: 0 auto;
   margin-top: 11px;
+  justify-content: center;
 }
 
 .detail-page__bullets .glide__bullet {
@@ -1396,6 +1397,21 @@ body {
   }
 }
 
+@media all and (max-width: 1320px) {
+  .detail__info {
+    padding: 0 60px;
+  }
+
+  .detail__slider {
+    width: 48%;
+  }
+
+  .detail__about {
+    width: 40%;
+    padding-left: 10%;
+  }
+}
+
 @media all and (max-width: 1200px) {
   .gallery__title,
   .gallery__price {
@@ -1543,6 +1559,45 @@ body {
 
   .gallery__price {
     display: block;
+  }
+
+  .detail__info {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .detail__slider {
+    width: 100%;
+  }
+
+  .detail__about {
+    width: 100%;
+    padding-left: 0;
+    max-width: 400px;
+  }
+
+  .detail__specifications {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .detail__button {
+    max-width: 100%;
+    font-size: 16px;
+    padding: 18px 0;
+  }
+
+  .detail-page__item {
+    text-align: center;
+  }
+
+  .detail-page__item img {
+    max-width: 400px;
+  }
+
+  .detail-page__arrows .glide__arrow {
+    display: none;
   }
 
   .header {
@@ -1701,6 +1756,41 @@ body {
     font-size: 14px;
     width: 90px;
     height: 22px;
+  }
+
+  .detail__info {
+    padding: 0 20px;
+  }
+
+  .detail__about {
+    margin-top: 30px;
+    max-width: 259px;
+  }
+
+  .detail__about h2 {
+    font-size: 24px;
+  }
+
+  .detail__price {
+    font-size: 18px;
+  }
+
+  .detail__size,
+  .detail__text {
+    font-size: 18px;
+  }
+
+  .detail-page__item {
+    height: 332px;
+  }
+
+  .detail-page__item img {
+    max-width: 259px;
+  }
+
+  .detail-page__bullets .glide__bullet {
+    height: 70px;
+    max-width: 51px;
   }
 }
 
