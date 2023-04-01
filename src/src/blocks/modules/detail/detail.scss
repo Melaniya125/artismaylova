@@ -113,6 +113,9 @@
         }
         .socials-item:not(:last-child) {
             margin-right: 54px;
+            @media all and (max-width:991px) {
+                margin-right: 5%;
+            }
         }
     }
 }

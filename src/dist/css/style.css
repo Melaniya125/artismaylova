@@ -1588,6 +1588,10 @@ body {
     padding: 18px 0;
   }
 
+  .detail__socials .socials-item:not(:last-child) {
+    margin-right: 5%;
+  }
+
   .detail-page__item {
     text-align: center;
   }
