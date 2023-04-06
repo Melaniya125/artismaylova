@@ -1,10 +1,10 @@
 <?php
 /**
- * Soluzioni di casa functions and definitions
+ * Artizmaylova functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Soluzioni_di_casa
+ * @package Artizmaylova
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -19,14 +19,14 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function soluzioni_di_casa_setup() {
+function Artizmaylova_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on Soluzioni di casa, use a find and replace
-		* to change 'soluzioni-di-casa' to the name of your theme in all the template files.
+		* If you're building a theme based on Artizmaylova, use a find and replace
+		* to change 'artizmaylova' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'soluzioni-di-casa', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'artizmaylova', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -49,7 +49,7 @@ function soluzioni_di_casa_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'soluzioni-di-casa' ),
+			'menu-1' => esc_html__( 'Primary', 'artizmaylova' ),
 		)
 	);
 
@@ -74,7 +74,7 @@ function soluzioni_di_casa_setup() {
 	add_theme_support(
 		'custom-background',
 		apply_filters(
-			'soluzioni_di_casa_custom_background_args',
+			'Artizmaylova_custom_background_args',
 			array(
 				'default-color' => 'ffffff',
 				'default-image' => '',
@@ -100,7 +100,7 @@ function soluzioni_di_casa_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'soluzioni_di_casa_setup' );
+add_action( 'after_setup_theme', 'Artizmaylova_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -109,22 +109,22 @@ add_action( 'after_setup_theme', 'soluzioni_di_casa_setup' );
  *
  * @global int $content_width
  */
-function soluzioni_di_casa_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'soluzioni_di_casa_content_width', 640 );
+function Artizmaylova_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'Artizmaylova_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'soluzioni_di_casa_content_width', 0 );
+add_action( 'after_setup_theme', 'Artizmaylova_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function soluzioni_di_casa_widgets_init() {
+function Artizmaylova_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'soluzioni-di-casa' ),
+			'name'          => esc_html__( 'Sidebar', 'artizmaylova' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'soluzioni-di-casa' ),
+			'description'   => esc_html__( 'Add widgets here.', 'artizmaylova' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -132,12 +132,12 @@ function soluzioni_di_casa_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'soluzioni_di_casa_widgets_init' );
+add_action( 'widgets_init', 'Artizmaylova_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function soluzioni_di_casa_scripts() {
+function Artizmaylova_scripts() {
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/src/dist/css/style.css', false, '1.1', 'all');
 	wp_style_add_data( 'style', 'rtl', 'replace' );
 	wp_enqueue_style( 'default_style', get_template_directory_uri() . '/style.css', false, '1.1', 'all');
@@ -145,7 +145,7 @@ function soluzioni_di_casa_scripts() {
 
 	wp_enqueue_script( 'main.js', get_template_directory_uri() . '/src/dist/js/app.min.js', false, '1.1', true );
 }
-add_action( 'wp_enqueue_scripts', 'soluzioni_di_casa_scripts' );
+add_action( 'wp_enqueue_scripts', 'Artizmaylova_scripts' );
 
 /**
  * Implement the Custom Header feature.

@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Soluzioni_di_casa
+ * @package Artizmaylova
  */
 
 get_header();

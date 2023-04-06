@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Soluzioni_di_casa
+ * @package Artizmaylova
  */
 
 ?>
@@ -22,14 +22,14 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				soluzioni_di_casa_posted_on();
-				soluzioni_di_casa_posted_by();
+				Artizmaylova_posted_on();
+				Artizmaylova_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php soluzioni_di_casa_post_thumbnail(); ?>
+	<?php Artizmaylova_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -37,7 +37,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'soluzioni-di-casa' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'artizmaylova' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -50,7 +50,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'soluzioni-di-casa' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'artizmaylova' ),
 				'after'  => '</div>',
 			)
 		);
@@ -58,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php soluzioni_di_casa_entry_footer(); ?>
+		<?php Artizmaylova_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

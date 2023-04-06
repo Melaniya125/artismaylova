@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Soluzioni_di_casa
+ * @package Artizmaylova
  */
 
 ?>
@@ -14,7 +14,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php soluzioni_di_casa_post_thumbnail(); ?>
+	<?php Artizmaylova_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -22,7 +22,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'soluzioni-di-casa' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'artizmaylova' ),
 				'after'  => '</div>',
 			)
 		);
@@ -36,7 +36,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'soluzioni-di-casa' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'artizmaylova' ),
 						array(
 							'span' => array(
 								'class' => array(),

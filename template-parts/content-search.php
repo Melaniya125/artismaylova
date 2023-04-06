@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Soluzioni_di_casa
+ * @package Artizmaylova
  */
 
 ?>
@@ -16,20 +16,20 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php
-			soluzioni_di_casa_posted_on();
-			soluzioni_di_casa_posted_by();
+			Artizmaylova_posted_on();
+			Artizmaylova_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php soluzioni_di_casa_post_thumbnail(); ?>
+	<?php Artizmaylova_post_thumbnail(); ?>
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php soluzioni_di_casa_entry_footer(); ?>
+		<?php Artizmaylova_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

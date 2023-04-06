@@ -1,8 +1,8 @@
 <?php
 /**
- * Soluzioni di casa Theme Customizer
+ * Artizmaylova Theme Customizer
  *
- * @package Soluzioni_di_casa
+ * @package Artizmaylova
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function soluzioni_di_casa_customize_register( $wp_customize ) {
+function Artizmaylova_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -20,26 +20,26 @@ function soluzioni_di_casa_customize_register( $wp_customize ) {
 			'blogname',
 			array(
 				'selector'        => '.site-title a',
-				'render_callback' => 'soluzioni_di_casa_customize_partial_blogname',
+				'render_callback' => 'Artizmaylova_customize_partial_blogname',
 			)
 		);
 		$wp_customize->selective_refresh->add_partial(
 			'blogdescription',
 			array(
 				'selector'        => '.site-description',
-				'render_callback' => 'soluzioni_di_casa_customize_partial_blogdescription',
+				'render_callback' => 'Artizmaylova_customize_partial_blogdescription',
 			)
 		);
 	}
 }
-add_action( 'customize_register', 'soluzioni_di_casa_customize_register' );
+add_action( 'customize_register', 'Artizmaylova_customize_register' );
 
 /**
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function soluzioni_di_casa_customize_partial_blogname() {
+function Artizmaylova_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
 
@@ -48,14 +48,14 @@ function soluzioni_di_casa_customize_partial_blogname() {
  *
  * @return void
  */
-function soluzioni_di_casa_customize_partial_blogdescription() {
+function Artizmaylova_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function soluzioni_di_casa_customize_preview_js() {
-	wp_enqueue_script( 'soluzioni-di-casa-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
+function Artizmaylova_customize_preview_js() {
+	wp_enqueue_script( 'artizmaylova-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
 }
-add_action( 'customize_preview_init', 'soluzioni_di_casa_customize_preview_js' );
+add_action( 'customize_preview_init', 'Artizmaylova_customize_preview_js' );
