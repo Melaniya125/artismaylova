@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="app">
         <div class="front-page">
             <div class="front-page__in">
                 <div class="front-page__left">

@@ -1,5 +1,6 @@
 import * as globalFunctions from './modules/functions.js';
 import Vue from 'vue/dist/vue.js';
+import $ from 'jquery';
 
 globalFunctions.isWebp();
 import FrontPage from '../blocks/modules/front-page/front-page.js';
@@ -41,7 +42,7 @@ window.app = new Vue({
 //     // window.placesAndCases.init();
 // });
 
-jQuery(document).ready(function() {
+$(document).ready(function() {
     document.querySelector('.header__burger').addEventListener('click', () => {
         document.querySelector('.header__mobile').classList.add('open');
     });
